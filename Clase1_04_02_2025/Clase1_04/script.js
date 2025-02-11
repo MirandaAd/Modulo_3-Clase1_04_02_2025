@@ -57,6 +57,11 @@ Es util para depuración y validación de codigo.
 */
 console.log(typeof edad)
 console.log(typeof edadCadena)
+
+/*
+A continuación se muestrarán algunos ejemplos de tipos de datos en JavaScript.
+*/
+
 console.log(typeof 42)
 console.log(typeof 'veinticinco')
 console.log(typeof -666)
