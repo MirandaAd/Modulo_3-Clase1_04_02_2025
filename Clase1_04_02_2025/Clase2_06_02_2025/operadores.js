@@ -67,3 +67,14 @@ console.log(and, or, not);
 let logico1 = true || false && false // Primero se evalua And = true || false = true
 let logico2 = (true || false) && false // Primero se evalua (Or) = true && false = false
 
+
+
+//Ejercicio operadores
+
+let a = 8, b = 4, c = 2, d = "8";
+
+let resultadoEjercicio1 = a + b * c;
+let resultadoEjercicio2 = (a + b) * c;
+let resultadoEjercicio3 = a / b + c;
+let resultadoEjercicio4 = a === d || b < c;
+let resultadoEjercicio5 = !(a > b) && (c < b);
