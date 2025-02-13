@@ -52,3 +52,18 @@ let or = (10 > 5) || (3 < 8) // true || false // true si alguno de los dos es ve
 let not = !(10 > 5) // !true // false si es verdadero, true si es falso
 
 console.log(and, or, not);
+
+/*
+    Jerarquia de operadores lógicos
+    1. () parentesis  ??
+    2. ! not
+    3. && and
+    4. || or
+
+    nota: La jerarquia de los operadores lógicos es la misma que la jerarquia de los operadores matematicos
+*/
+
+//Ejemplos de jerarquia de operadores lógicos
+let logico1 = true || false && false // Primero se evalua And = true || false = true
+let logico2 = (true || false) && false // Primero se evalua (Or) = true && false = false
+
