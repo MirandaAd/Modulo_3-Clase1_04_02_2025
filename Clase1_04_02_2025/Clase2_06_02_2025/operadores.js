@@ -35,3 +35,20 @@ let operacion2 = (2 + 3) * 4
 let operacion3 = 2 + 3 * 4 / 2
 
 console.log(operacion, operacion2, operacion3);
+
+// Operadores de comparacion
+let mayor = 5 > 3 // Mayor que
+let menor = 5 < 10 // Menor que
+let igual = 5 == "5" // Comparacion debil De valor (true)
+let estrictamenteIgual = 5 === "5" // Comparacion estricta De valor y tipo (false)
+let diferente = 5 != "5" // Comparacion debil De valor (false)
+let estrictamenteDiferente = 5 !== "5" // Comparacion estricta De valor y tipo (true)
+
+console.log(mayor, menor, igual, estrictamenteIgual, diferente, estrictamenteDiferente);
+
+// Operadores lógicos
+let and = (10 > 5) && (3 < 8) // true && true // true si ambos son verdaderos
+let or = (10 > 5) || (3 < 8) // true || false // true si alguno de los dos es verdadero
+let not = !(10 > 5) // !true // false si es verdadero, true si es falso
+
+console.log(and, or, not);
