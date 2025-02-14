@@ -43,7 +43,7 @@ Ejercicio Comparación y decisiones en JavaScript
     Evaluador de notas y mensajes personalizados
 */
 
-let nota = 89
+let nota = 60
 
 
 if (nota >= 90) {
