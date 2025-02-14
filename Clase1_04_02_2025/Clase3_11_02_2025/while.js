@@ -3,7 +3,7 @@
 let contador = 1;
 
 while(contador <= 5){
-    console.log("Número", contador);
+    console.log("El contador esta en el ciclo:", contador);
     contador++ // <- es equivalente a contador = contador +1 o contador +=1
 }
 
