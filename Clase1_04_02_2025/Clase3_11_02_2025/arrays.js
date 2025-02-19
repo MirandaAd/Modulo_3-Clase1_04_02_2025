@@ -14,3 +14,13 @@ let frutas = ["Uva", "Manzana", "Pera", "Mango", "Fresa", "Aguacate", "Melón"]
 frutas[4] = "Guayaba"
 console.log("Frutas actualizadas", frutas);
 
+
+
+//ejercicio while
+let i = 0; while (i < 3) {
+    console.log(i); i++;
+}
+
+let suma = 0; let numero = 1; while (suma < 5) {
+    suma += numero; numero++; }
+console.log(suma);
