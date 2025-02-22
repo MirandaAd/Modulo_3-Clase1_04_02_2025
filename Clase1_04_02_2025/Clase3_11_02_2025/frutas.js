@@ -12,10 +12,13 @@ let ContarFrutas = Object.fromEntries(
 
 console.log(ContarFrutas);
 
+//Contar cantidad total de futas
 
+console.log("Cantidad de frutas:", frutas.length);
+
+//Ciclo While que recorre el arreglo
 let i = 0;
 while (i<frutas.length){
     console.log(frutas[i]);
     i++;
 }
-
