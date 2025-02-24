@@ -10,7 +10,7 @@ let frutas = ["Uva", "Manzana", "Pera", "Mango", "Fresa", "Aguacate", "Melón"]
     console.log("fruta posicion -1:", frutas[-1]);
     console.log("última fruta usando la propiedad length:", frutas[frutas.length-1]); //frutas.length se refiere a la cantidad de elementos dentro del arreglo; su longitud.
 
-//Ejemplo 3: Modificar un elemoento del areglo
+//Ejemplo 3: Modificar un elemento del areglo
 frutas[4] = "Guayaba"
 console.log("Frutas actualizadas", frutas);
 
