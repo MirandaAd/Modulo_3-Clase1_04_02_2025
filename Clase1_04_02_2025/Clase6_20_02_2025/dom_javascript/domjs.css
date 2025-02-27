@@ -1,0 +1,33 @@
+:root {
+ background-color: rgb(214, 238, 237);
+ --primary-color: rgb(0, 122, 118);
+ --secondary-color: rgb(77, 100, 100);
+ --text-color: #2c3e50;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+body {
+    font-family: 'calibri light', sans-serif;
+}
+
+
+form {
+    background-color: rgb(222, 188, 188);
+    color: var(--text-color);
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+section {    
+    color: var(--text-color);
+    padding: 20px;
+    text-align: center;
+    font-size: 1.1em;
+}
