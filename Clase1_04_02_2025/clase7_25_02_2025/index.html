@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de productos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gestión de productos</h1>
+    </header>
+    <main>
+        <section aria-labelledby="formulario-productos">
+            <h2 id = "formulario-productos">Formulario de productos</h2>
+            <form>
+                <label for="nombre">Nombre del producto</label>
+                <input type="text" id="nombre" required>
+
+                <label for="precio" >Precio</label>
+                <input type="number" id="precio" required min="1"> 
+
+                <label for="categoria">Categoria</label>
+                <Select id="categoria">
+                    <option value="Electronica">Electronica</option>
+                    <option value="Accesorios">Accesorios</option>
+                    <option value="Ropa">Ropa</option>
+                </Select>
+
+                <label for="Descuento">Descuento</label>
+                <input type="number" id="descuento" value="0" min="0" max="99">
+
+                <button type="submit">Agregar producto</button>
+            </form>
+        </section>
+
+        <section aria-labelledby="lista-productos">
+            <h2 id = "lista-productos">Lista de productos</h2>
+            <ul></ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Gestion de productos</p>
+    </footer>
+    
+</body>
+</html>

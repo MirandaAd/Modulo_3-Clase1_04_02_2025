@@ -4,25 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM en JavaScript</title>
-    <link rel="stylesheet" href="domjs.css">
+    <link rel="stylesheet" href="domcss.css">
 </head>
 <body>
     <header>
         <h1>Intro al DOM en JavaScript: Ejercicio caja de comentarios</h1>
     </header>
 
-    <form>
+    <form id="coment-form">
         <label for="comentario">Comentario:</label>
-        <input type="text" id="comentario" required>
-        <button type="submit">Enviar</button>
+        <input type="text" id="itemComentario">
+        <button type="addButton">Enviar</button>
     </form>
 
     <section>
-        <h2 id="lista-comentario">Comentarios</h2>
-        <ul id="lista-coment" aria-labelledby="comentario"></ul>
+        <h2 id="comentList">Comentarios</h2>
+        <ul id="dynamicList"></ul>
     </section>
 
-    <script src="domjs.js"></script>
     
+<script src="domjs.js"></script> 
 </body>
 </html>

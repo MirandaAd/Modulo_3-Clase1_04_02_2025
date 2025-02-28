@@ -11,11 +11,22 @@
     <header>
         <h1>Intro al DOM en JavaScript</h1>
     </header>
-    <form>
-        <label for="comentario">Comentario:</label>
-        <input type="text" id="comentario" required>
-        <button type="submit">Enviar comentario</button>
-    </form>
-    <script src="herencia.js"></script>
+    <main>
+        <section aria-labelledby="titulo">
+            <form id="producto-form">
+                <label for="nombre">Nombre del Producto:</label>
+                <input type="text" id="nombre" required>
+    
+                <button type="submit">Agregar Producto</button>
+            </form>
+        </section>
+    
+        <section>
+            <h2 id="lista-titulo">Lista de Productos</h2>
+            <ul id="lista-productos" aria-labelledby="lista-titulo"></ul>
+        </section>
+    </main>
+
+    <script src="dom.js"></script>
 </body>
 </html>
