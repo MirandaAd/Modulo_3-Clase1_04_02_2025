@@ -13,9 +13,13 @@ header {
 }
 
 body {
-    font-family: 'calibri light', sans-serif;
+    font-family: corbel, 'Arial Narrow', sans-serif;
 }
 
+footer{
+    margin-top: 2rem;
+    text-align: center;
+}
 
 form {
     background-color: rgb(222, 188, 188);
@@ -30,4 +34,21 @@ section {
     padding: 20px;
     text-align: center;
     font-size: 1.1em;
+}
+
+button:hover {
+    background-color: var(--hoover-color)
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: rgb(152, 222, 220);
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
 }

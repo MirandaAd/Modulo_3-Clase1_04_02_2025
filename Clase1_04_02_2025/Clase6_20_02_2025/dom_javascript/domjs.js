@@ -1,7 +1,7 @@
 
 class Comentarios {
     constructor(texto){
-        this.texto = texto;
+        this.texto = texto
     }
     mostrarComentario(){
         return this.texto
@@ -12,31 +12,20 @@ const formulario = document.getElementById("coment-form")
 const listaComentarios = document.getElementById("dynamicList")
 
 formulario.addEventListener("submit", function(event){
-    event.preventDefault();
-    const texto = document.getElementById("itemComentario").value;
+    event.preventDefault()
+  console.log(event);
 
-    const item = document.createElement("li");
+  const text = document.getElementById("itemComentario").value
+  const item = document.createElement("li")
 
-    item.textContent = nuevoProducto.mostrarInfo();
-    listaProductos.appendChild(item);
-}
-)
+  let nuevoComentario = new Comentarios(text)
 
+  item.textContent = nuevoComentario.mostrarComentario()
+  listaComentarios.appendChild(item)
+  
+  formulario.reset()
 
+})
 
-/*
-let input = document.querySelector("#itemComentario")
-let addButton = document.querySelector("#addButton")
-let list = document.querySelector("#dinamycList")
-
-addButton.addEventListener("click", function () {
-    if (input.value.trim() !== ""){
-        let newItem = document.createElement("li");
-        newItem.innerText =input.value;
-        list.appendChild(newItem);
-        input.value = "";
-        }
-});
-*/
 
 

@@ -11,17 +11,26 @@
         <h1>Intro al DOM en JavaScript: Ejercicio caja de comentarios</h1>
     </header>
 
-    <form id="coment-form">
-        <label for="comentario">Comentario:</label>
-        <input type="text" id="itemComentario">
-        <button type="addButton">Enviar</button>
-    </form>
-
+    <main>
     <section>
-        <h2 id="comentList">Comentarios</h2>
-        <ul id="dynamicList"></ul>
+        <h2 id = "formulario-comentarios">Escribe un comentario</h2>
+        <form id="coment-form">
+            <label for="comentario"></label>
+            <input type="text" id="itemComentario">
+
+            <button type="submit">Enviar</button>
+        </form>
     </section>
 
+    <section>
+        <h2 id="comentList">Comentarios:</h2>
+        <ul id="dynamicList"></ul>
+    </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Caja de comentarios</p>
+    </footer>
     
 <script src="domjs.js"></script> 
 </body>
