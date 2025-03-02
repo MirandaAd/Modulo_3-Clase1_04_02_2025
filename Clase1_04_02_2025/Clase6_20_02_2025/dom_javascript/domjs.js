@@ -24,7 +24,6 @@ formulario.addEventListener("submit", function(event){
   listaComentarios.appendChild(item)
   
   formulario.reset()
-
 })
 
 
