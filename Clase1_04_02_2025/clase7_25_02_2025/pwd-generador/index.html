@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PasswordGenerator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de Contraseñas</h1>
+        <div class="longitud">
+            <label for="pwd-longitud">Longitud:
+                <span id="show-length">12</span>
+            </label>
+            <input type="range" id="range" min="8" max="25" value="12">
+        </div>
+        <div class="caracteres">
+            <label for="include-uppercase">Incluir Mayúsculas</label>
+                <input type="checkbox" id="include-uppercase">
+            </label>
+            <label for="include-lowercase">Incluir Minúsculas</label>
+                <input type="checkbox" id="include-lowercase">
+            </label>
+            <label for="include-numbers">Incluir Números</label>
+                <input type="checkbox" id="include-numbers">
+            </label>
+            <label for="include-symbols">Incluir Símbolos</label>
+                <input type="checkbox" id="include-symbols">
+            </label>
+        </div>
+        <div class="bttngenerar">
+            <button id="buttonGenerar">Generar Contraseña</button>
+        </div>
+        <div class="pwd-generated">
+            <label for="password">Contraseña:</label>
+            <input type="text" id="pwd-generated" readonly ></input>
+            <i class="fa fa-copy"></i>        
+        </div>        
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
