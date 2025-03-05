@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Libros</h1>
+        <p>En esta página puede dejar un comentario referente a los libros que ha leído.</p>
+    </header>
+    <main class="main">
+        <div class= "blocklibros">
+            <h2>Lista de libros</h2>
+            <nav>
+                <ul>
+                    <li><a href="https://pruebat.org/ver-libro/el-principito/a939969124658f01c43757bf12ff79821">El principito</a></li>
+                    <li><a href="https://pruebat.org/ver-libro/la-metamorfosis-/4d83e95272302e948623bd9243fc194f1">La metamorfosis</a></li>
+                    <li><a href="https://pruebat.org/ver-libro/las-mil-y-una-noches/876ecb4fab68b20e56d229b34647db591">Las mil y una noches</a></li>
+                    <li><a href="https://pruebat.org/ver-libro/la-divina-comedia/94df8e543b3303df635b66374bb9e1261">La divina comedia</a></li>
+                    <li><a href="https://pruebat.org/ver-libro/frankenstein/82338f19a953c222e35dfe481c534696619">Frankenstein</a></li>
+                    <li><a href= "https://pruebat.org/ver-libro/moby-dick/d933256201851c55e4300dc2631d5c0a619">Moby dick</a></li>
+                </ul>
+            </nav>
+        </div>
+        <img class="imgbook" src="https://static.vecteezy.com/system/resources/thumbnails/028/051/960/small/stack-of-book-illustration-png.png">
+        <div class= "escribecoment">
+            <h2>Caja de comentarios</h2>
+            <section>
+                <h3 id = "formulario-comentarios">Escribe un comentario</h3>
+                <form id="coment-form">
+                    <label for="comentario"></label>
+                    <input type="text" id="itemComentario">
+        
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <section class="comentarios">
+        <h2 id="comentList">Comentarios:</h2>
+        <ul id="dynamicList"></ul>
+        <div>
+            <button type="reset" id="borrarcoment">Borrar comentario</button>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Caja de comentarios de libros </p>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
