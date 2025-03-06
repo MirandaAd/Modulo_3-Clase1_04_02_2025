@@ -1,33 +1,28 @@
-const formulario = document.getElementById("coment-form")
-const listaComentarios = document.getElementById("dynamicList")
-const btnborra = document.getElementById("borrarcoment") 
+const form = document.getElementById("coment-form");
+const itemComentario = document.getElementById("itemComentario");
+const listaComentarios = document.getElementById("dynamicList");
+const btnborra = document.getElementById("borrarcoment");
 
+function agregarComentario(event) {
+    event.preventDefault();
 
-class Comentarios {
-    constructor(texto){
-        this.texto = texto
-    }
-    mostrarComentario(){
-        return this.texto
-    }
+    let itemComentario = document.getElementById("itemComentario").value.trim();
+    if (itemComentario === "") return;
+    
+    const item = document.createElement("li");
+
+    item.innerHTML = `${itemComentario}<br>${mostrarFecha()}`;             
+    listaComentarios.appendChild(item);
+    document.getElementById("itemComentario").value = "";
 }
 
-formulario.addEventListener("submit", function(event){
-    event.preventDefault()
-  console.log(event);
+function mostrarFecha() {
+    let date = new Date();
+    let datos = { day: "2-digit", month: "2-digit", year: "numeric", hour: "2-digit", minute: "2-digit", second: "2-digit" };
+    return date.toLocaleDateString("es-ES", datos);
+}
 
-  const text = document.getElementById("itemComentario").value.trim();
-  if (text === "") return;
-  const item = document.createElement("li")
-
-  let nuevoComentario = new Comentarios(text)
-
-  item.textContent = nuevoComentario.mostrarComentario()
-  listaComentarios.appendChild(item)
-
-  formulario.reset()
-
-})
+document.getElementById("coment-form").addEventListener("submit", agregarComentario);
 
 btnborra.addEventListener("click", eliminarComentario);
 function eliminarComentario() {

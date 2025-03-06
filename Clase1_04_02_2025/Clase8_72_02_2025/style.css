@@ -28,7 +28,6 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border:solid var(--primary-color);
     border-radius: 0.2rem;
 }
 
@@ -78,4 +77,19 @@ section{
     background-color: var(--secondary-color);
     color: var(--background-color);
     border-radius: 0.5rem;
+    list-style-type: none;
+}
+
+.libro{
+    background-color: var(--secondary-color);
+    color: var(--highlight-color);
+    padding: 0.15rem;
+}
+
+li {
+    background: var(--highlight-color);
+    margin: 5px;
+    padding: 0.2rem;
+    border-radius: 5px;
+    color: var(--text-color);
 }
